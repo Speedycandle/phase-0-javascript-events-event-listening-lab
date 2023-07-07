@@ -17,7 +17,7 @@
   <main id="main">My ID is "main"!</main>
   <br />
   <div>
-    <label>Input:</label><input id="input" />
+      <input id="button" type="button" value="Click Me!"/>
   </div>
   <br />
   <div>
@@ -35,6 +35,18 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript">
+    function addingEventListener() {
+      const button = document.getElementById('button');
+    
+      function buttonClick() {
+        alert('Button clicked!');
+      }
+    
+      button.addEventListener('click', buttonClick);
+    }
+    
+    addingEventListener();
+  </script>
 </body>
 </html>
